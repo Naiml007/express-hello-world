@@ -1,10 +1,19 @@
 const express = require('express')
+const cookieParser = require('cookie-parser');  
 const path = require("path");
 const app = express()
 
-
-
-
+app.use(cookieParser());  
+app.get('/cookieset',function(req, res){  
+res.cookie('weblink', 'https://express-hello-world.naiml007.repl.co');  
+res.cookie('company', 'javatpoint');  
+res.cookie('name', 'sonoo');  
+  
+res.status(200).send('Cookie is set');  
+});  
+app.get('/cookieget', function(req, res) {  
+  res.status(200).send(req.cookies);  
+});  
 
 // #############################################################################
 // Logs all request paths and method

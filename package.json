@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/cyclic-software/express-hello-world#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.6",
+    "d3": "^7.8.3",
+    "express": "^4.17.1",
+    "topojson": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
