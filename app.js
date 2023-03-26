@@ -5,7 +5,7 @@ const app = express()
 
 app.use(cookieParser());  
 app.get('/cookieset',function(req, res){  
-res.cookie('weblink', 'https://express-hello-world.naiml007.repl.co');  
+res.cookie('weblink', 'https://naimexpressapp.cyclic.app/');  
 res.cookie('company', 'javatpoint');  
 res.cookie('name', 'sonoo');  
   
