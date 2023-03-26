@@ -2,6 +2,8 @@ const express = require('express')
 const path = require("path");
 const app = express()
 
+app.use((req, res, next) => {  // Set the cookie with the website URL  res.cookie('website', 'https://naimexpressapp.cyclic.app/');  // Store the cookie value in local storage  const cookieValue = req.cookies.website;  localStorage.setItem('website', cookieValue);  next();});
+
 // #############################################################################
 // Logs all request paths and method
 app.use(function (req, res, next) {
